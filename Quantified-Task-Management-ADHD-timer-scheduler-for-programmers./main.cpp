@@ -13,34 +13,36 @@ Ability to write notes and being able to display them with the timer.
 */
 
 #include <iostream>
+using namespace std;
 
 int main(){
 
-    std::string command;
-    std::cout<<"Hello Welcome!\n";
-    std::cout<<"Please select a choice\n";
-    std::cout<<"\n";
+    string command;
+    cout<<"Hello Welcome to the Quantified Task Management Timer!\n";
+    cout<<"Please select a choice\n";
+    cout<<"\n";
 
-    std::cout<<"#######################################\n";
-    std::cout<<"Timer\n";
-    std::cout<<"Tasks\n";
-    std::cout<<"Notes\n";
-    while(std::cin >> command){
+    cout<<"#######################################\n";
+    cout<<"Timer\n";
+    cout<<"Tasks\n";
+    cout<<"Notes\n";
+    cout<<"#######################################\n";
+    cout<<"\n";
+    
+    while(cin >> command){
     //Timer
+    cin.ignore();
     if(command == "Timer"){
-       std::getline(std::cin,command);
-       std::cout<<command;
+       getline(cin,command);
     }
     //task 
     else if(command == "Tasks"){
-        std::getline(std::cin,command);
-        std::cout<<command;
-        std::cout<<"hell ye boi\n";
+        getline(cin,command);
     }
     //notes
     else if(command == "Notes"){
-        std::getline(std::cin,command);
-        std::cout << "Notes";
+        getline(cin,command);
+        cout << "Notes";
     }
     //quotes 
     }    
